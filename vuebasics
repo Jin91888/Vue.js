@@ -1,0 +1,33 @@
+第二次提交中的项目结构相当简单。 
+除了 jshing、grund、GitHub 的一堆配置文件和两个 JSON 文件之外，
+我们可以看到三个文件夹：
+
+test
+src
+explorations
+
+everything starts with a test:
+
+test.js file:
+var Element = require('element')   //在第一行，有一个 require 语句来导入一个元素类，
+该元素类稍后将在代码中的某个地方定义。 把它想象成 Vue 类的祖先。
+
+describe('Element',function(){
+it('should have a variable',function(){
+assert.equal(Element,123)
+})
+})
+接下来，设置 describe 函数以提供一般上下文。
+在其中，调用了一个 it 函数来编写实际的测试用例，
+检查导入的 Element 类是否等于 123，
+它使用方法 assert.equal() 来执行此操作。
+
+
+在Vue中，我们要做的都在Vue application里面。
+
+做的这些将会被绑定到一个VUE类的实例上面。
+
+我们首先需要找到这个类的第一个实现，在那里我们将找到 mustache 语法背后的逻辑。
+
+
+
